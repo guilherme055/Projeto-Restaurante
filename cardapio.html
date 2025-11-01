@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio — Para Lanches</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cardapio.css">
+  
+  <style>
+    .prato { cursor: default; }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="imgs/Para Lanches.png" alt="Para Lanches" class="site-logo">
+      </a>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#sobre">Sobre Nós</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="index.html#login">Login</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <main style="padding-top:120px;">
+    <section id="cardapio" class="menu">
+      <h2>Nosso Cardápio</h2>
+      <h3 class="subtitulo">Escolha seu prato</h3>
+
+      <input type="text" id="pesquisa" placeholder="Pesquisar prato..." onkeyup="filtrarPratos()">
+
+        <div class="pratos" id="lista-pratos">
+          <div class="prato">
+            <img src="imgs/risoto.jpg" alt="Risoto de Cogumelos">
+            <h4>Risoto de Cogumelos</h4>
+            <p>Arborio, mix de cogumelos salteados e toque de parmesão.</p>
+            <div class="price">R$ 42,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/file.jpg" alt="Filé Mignon ao Molho Bordô">
+            <h4>Filé Mignon ao Molho Bordô</h4>
+            <p>Filé grelhado servido com molho bordô reduzido.</p>
+            <div class="price">R$ 68,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/Salmao-Grelhado.webp" alt="Salmão Grelhado com Ervas">
+            <h4>Salmão Grelhado com Ervas</h4>
+            <p>Salmão fresco grelhado, ervas finas e legumes salteados.</p>
+            <div class="price">R$ 56,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/macaarrao" alt="Pasta ao Pesto de Manjericão">
+            <h4>Pasta ao Pesto de Manjericão</h4>
+            <p>Massas artesanais com pesto fresco e lascas de parmesão.</p>
+            <div class="price">R$ 34,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/parmeggiana" alt="Bife à Parmegiana">
+            <h4>Bife à Parmegiana</h4>
+            <p>Bife empanado coberto com molho de tomate e queijo gratinado.</p>
+            <div class="price">R$ 48,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/salada" alt="Salada Caesar">
+            <h4>Salada Caesar</h4>
+            <p>Alface romana, croutons, parmesão e molho Caesar clássico.</p>
+            <div class="price">R$ 28,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/ramgu" alt="Polenta Cremosa com Ragu">
+            <h4>Polenta Cremosa com Ragu</h4>
+            <p>Polenta macia servida com ragu de carne lentamente cozido.</p>
+            <div class="price">R$ 36,00</div>
+          </div>
+
+          <div class="prato">
+            <img src="imgs/tiraiussu" alt="Tiramisu">
+            <h4>Tiramisu</h4>
+            <p>Sobremesa clássica italiana com café e mascarpone.</p>
+            <div class="price">R$ 22,00</div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Para Lanches Todos os direitos reservados.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+jpg
