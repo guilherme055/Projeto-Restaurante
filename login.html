@@ -1,65 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Para Lanches</title>
-    <link rel="stylesheet" href="/public/css/main.css">
-    <link rel="stylesheet" href="/public/css/effects.css">
-    <link rel="stylesheet" href="/public/css/features.css">
-    <link rel="stylesheet" href="/public/css/auth.css">
-    <link rel="stylesheet" href="/public/css/components.css">
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Para Lanches</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="login-page">
-    <div class="login-container">
-        <a href="index.html" class="logo-link">
-            <div class="logo">Para Lanches</div>
-        </a>
-        
-        <div class="login-box">
-            <h1>Entrar</h1>
-            <h2 class="subtitulo">Acesse sua conta</h2>
 
-            <form id="form-login">
-                <div id="mensagem" class="message"></div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" required placeholder="Ex: matheus@email.com">
-                </div>
-                
-                <div class="form-group">
-                    <label for="senha">Senha</label>
-                    <div class="password-input">
-                        <input type="password" id="senha" required placeholder="Digite sua senha">
-                        <button type="button" class="toggle-password" aria-label="Mostrar senha">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                    </div>
-                </div>
+<body>
 
-                <div class="form-options">
-                    <label class="remember-me">
-                        <input type="checkbox" id="lembrar">
-                        <span>Lembrar-me</span>
-                    </label>
-                    <a href="#" class="forgot-link">Esqueci a senha</a>
-                </div>
-
-                <button type="submit" class="btn-submit">Entrar</button>
-            </form>
-
-            <div class="login-footer">
-                <p>Não tem uma conta? <a href="cadastro.html">Registre-se</a></p>
-            </div>
-
-            <p id="mensagem" role="alert"></p>
-        </div>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="imgs/Para Lanches.png" alt="Para Lanches" class="site-logo">
+      </a>
     </div>
+  </header>
 
-    <script src="/public/js/auth.js"></script>
+  <main class="login-page">
+    <div class="login-box">
+      <img src="imgs/Para Lanches.png" alt="Para Lanches" class="site-logo big">
+      <h2>Entrar</h2>
+      <h3 class="subtitulo">Acesse sua conta</h3>
+
+      <form id="form-login">
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <div class="form-row">
+          <label><input type="checkbox" id="lembrar"> Lembrar-me</label>
+          <a class="forgot-link" href="#">Esqueci a senha</a>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="mensagem"></p>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
