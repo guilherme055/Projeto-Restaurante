@@ -1,3 +1,33 @@
+// Controle de Autenticação/Perfil
+function verificarLogin() {
+  const userStr = sessionStorage.getItem('user');
+  const navLogin = document.getElementById('nav-login');
+  const navProfile = document.getElementById('nav-profile');
+  const navUsername = document.getElementById('nav-username');
+  const navLogout = document.getElementById('nav-logout');
+
+  if (userStr) {
+    const user = JSON.parse(userStr);
+    if (navLogin) navLogin.style.display = 'none';
+    if (navProfile) {
+      navProfile.style.display = 'flex';
+      if (navUsername) navUsername.textContent = user.nome || user.email;
+    }
+  } else {
+    if (navLogin) navLogin.style.display = 'block';
+    if (navProfile) navProfile.style.display = 'none';
+  }
+
+  if (navLogout) {
+    navLogout.addEventListener('click', (e) => {
+      e.preventDefault();
+      sessionStorage.removeItem('user');
+      window.location.reload();
+    });
+  }
+}
+verificarLogin();
+
 // Menu hambúrguer (defensivo)
 const hamburger = document.getElementById('hamburger');
 const navbar = document.querySelector('.navbar');

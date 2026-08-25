@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardápio — Para Lanches</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cardapio.css">
   <style>
@@ -26,7 +27,16 @@
       <a href="index.html#sobre">Sobre Nós</a>
       <a href="#cardapio">Cardápio</a>
       <a href="index.html#contato">Contato</a>
-      <a href="index.html#login">Login</a>
+      
+      <!-- Controle de Login/Perfil -->
+      <div class="nav-auth">
+        <a href="login.html" id="nav-login">Login</a>
+        <div id="nav-profile" style="display: none; align-items: center; gap: 8px; color: #fff; background-color: rgba(255, 255, 255, 0.1); padding: 5px 15px; border-radius: 20px;">
+          <i class="fas fa-user-circle" style="font-size: 1.2rem; color: #bfa46a;"></i>
+          <span id="nav-username" style="font-weight: bold; color: #bfa46a; margin-right: 5px;"></span>
+          <a href="#" id="nav-logout" title="Sair" style="font-size: 1rem; color: #e06a6a; padding: 0; margin: 0;"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </div>
     </nav>
 
     <div class="hamburger" id="hamburger">&#9776;</div>
@@ -55,42 +65,42 @@
           </div>
 
           <div class="prato">
-            <img src="imgs/salmao.jpg" alt="Salmão Grelhado com Ervas">
+            <img src="imgs/pratos/Salmao-Grelhado.webp" alt="Salmão Grelhado com Ervas">
             <h4>Salmão Grelhado com Ervas</h4>
             <p>Salmão fresco grelhado, ervas finas e legumes salteados.</p>
             <div class="price">R$ 56,00</div>
           </div>
 
           <div class="prato">
-            <img src="imgs/pasta.jpg" alt="Pasta ao Pesto de Manjericão">
+            <img src="imgs/pratos/macaarrao.jpg" alt="Pasta ao Pesto de Manjericão">
             <h4>Pasta ao Pesto de Manjericão</h4>
             <p>Massas artesanais com pesto fresco e lascas de parmesão.</p>
             <div class="price">R$ 34,00</div>
           </div>
 
           <div class="prato">
-            <img src="imgs/bife.jpg" alt="Bife à Parmegiana">
+            <img src="imgs/pratos/parmeggiana.jpg" alt="Bife à Parmegiana">
             <h4>Bife à Parmegiana</h4>
             <p>Bife empanado coberto com molho de tomate e queijo gratinado.</p>
             <div class="price">R$ 48,00</div>
           </div>
 
           <div class="prato">
-            <img src="imgs/salada.jpg" alt="Salada Caesar">
+            <img src="imgs/pratos/salada.jpg" alt="Salada Caesar">
             <h4>Salada Caesar</h4>
             <p>Alface romana, croutons, parmesão e molho Caesar clássico.</p>
             <div class="price">R$ 28,00</div>
           </div>
 
           <div class="prato">
-            <img src="imgs/polenta.jpg" alt="Polenta Cremosa com Ragu">
+            <img src="imgs/pratos/ramgu.jpg" alt="Polenta Cremosa com Ragu">
             <h4>Polenta Cremosa com Ragu</h4>
             <p>Polenta macia servida com ragu de carne lentamente cozido.</p>
             <div class="price">R$ 36,00</div>
           </div>
 
           <div class="prato">
-            <img src="imgs/tiramisu.jpg" alt="Tiramisu">
+            <img src="imgs/pratos/salada.jpg" alt="Tiramisu">
             <h4>Tiramisu</h4>
             <p>Sobremesa clássica italiana com café e mascarpone.</p>
             <div class="price">R$ 22,00</div>
